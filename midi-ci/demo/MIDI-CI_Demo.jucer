@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="TqDP1U" name="MIDI-CI Demo" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
+              projectLineFeed="&#10;" version="0.2" bundleIdentifier="com.bome.midici-demo">
+  <MAINGROUP id="vJqvPF" name="MIDI-CI Demo">
+    <GROUP id="{BBCA8FB8-3CE0-79E3-895F-7F84558AD12B}" name="Source">
+      <FILE id="tqzkeU" name="ProfileComponent.cpp" compile="1" resource="0"
+            file="../src/ProfileComponent.cpp"/>
+      <FILE id="WxgQY3" name="ProfileComponent.h" compile="0" resource="0"
+            file="../src/ProfileComponent.h"/>
+      <FILE id="L2ca3a" name="MIDICIDeviceInfo.cpp" compile="1" resource="0"
+            file="../src/MIDICIDeviceInfo.cpp"/>
+      <FILE id="nbR66w" name="MIDICIDeviceInfo.h" compile="0" resource="0"
+            file="../src/MIDICIDeviceInfo.h"/>
+      <FILE id="yfllj8" name="MIDICIProfileTypes.cpp" compile="1" resource="0"
+            file="../src/MIDICIProfileTypes.cpp"/>
+      <FILE id="nl7v7D" name="MIDICIProfileTypes.h" compile="0" resource="0"
+            file="../src/MIDICIProfileTypes.h"/>
+      <FILE id="tncQZ3" name="MIDICIProfiles.cpp" compile="1" resource="0"
+            file="../src/MIDICIProfiles.cpp"/>
+      <FILE id="pKnmxx" name="MIDICIProfiles.h" compile="0" resource="0"
+            file="../src/MIDICIProfiles.h"/>
+      <FILE id="Xi7brg" name="MIDICIDataTypes.h" compile="0" resource="0"
+            file="../src/MIDICIDataTypes.h"/>
+      <FILE id="kJerMn" name="MIDICIConstants.h" compile="0" resource="0"
+            file="../src/MIDICIConstants.h"/>
+      <FILE id="mEi8g4" name="MIDICIMessage.cpp" compile="1" resource="0"
+            file="../src/MIDICIMessage.cpp"/>
+      <FILE id="B1tXJL" name="MIDICIMessage.h" compile="0" resource="0" file="../src/MIDICIMessage.h"/>
+      <FILE id="U1JyRk" name="Constants.h" compile="0" resource="0" file="../src/Constants.h"/>
+      <FILE id="vvtPwj" name="JuceMidiBridge.cpp" compile="1" resource="0"
+            file="../src/JuceMidiBridge.cpp"/>
+      <FILE id="WG7ptD" name="JuceMidiBridge.h" compile="0" resource="0"
+            file="../src/JuceMidiBridge.h"/>
+      <FILE id="G96Und" name="MIDI.cpp" compile="1" resource="0" file="../src/MIDI.cpp"/>
+      <FILE id="S83JLv" name="MIDI.h" compile="0" resource="0" file="../src/MIDI.h"/>
+      <FILE id="MgDVbe" name="Logger.cpp" compile="1" resource="0" file="../src/Logger.cpp"/>
+      <FILE id="hkuRB0" name="Logger.h" compile="0" resource="0" file="../src/Logger.h"/>
+      <FILE id="cYcF4c" name="MIDICIHandlerBase.cpp" compile="1" resource="0"
+            file="../src/MIDICIHandlerBase.cpp"/>
+      <FILE id="rg4xXH" name="MIDICIHandlerBase.h" compile="0" resource="0"
+            file="../src/MIDICIHandlerBase.h"/>
+      <FILE id="hIlT3O" name="MIDICIDevice.cpp" compile="1" resource="0"
+            file="../src/MIDICIDevice.cpp"/>
+      <FILE id="oxycQa" name="MIDICIDevice.h" compile="0" resource="0" file="../src/MIDICIDevice.h"/>
+      <FILE id="XV8QUG" name="MIDICIDiscovery.cpp" compile="1" resource="0"
+            file="../src/MIDICIDiscovery.cpp"/>
+      <FILE id="iRGnn2" name="MIDICIDiscovery.h" compile="0" resource="0"
+            file="../src/MIDICIDiscovery.h"/>
+      <FILE id="pTO9Iv" name="Main.cpp" compile="1" resource="0" file="../src/Main.cpp"/>
+      <FILE id="PtJbnv" name="MainComponent.h" compile="0" resource="0" file="../src/MainComponent.h"/>
+      <FILE id="pn68x2" name="MainComponent.cpp" compile="1" resource="0"
+            file="../src/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MIDI-CI_Demo"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MIDI-CI_Demo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <XCODE_MAC targetFolder="Builds/MacOS">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="MIDI-CI_Demo"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="MIDI-CI_Demo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
