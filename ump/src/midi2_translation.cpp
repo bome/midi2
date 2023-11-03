@@ -461,13 +461,14 @@ uint32 MIDI2Translator::convert14to32(byte lsb, byte msb)
 
 uint32 MIDI2Translator::convert14to32(uint16 value14)
 {
-	uint32 bitShiftedValue = ((uint32)value14) << 8;
+	uint32 bitShiftedValue = ((uint32)value14) << 18;
 	if (value14 <= 0x2000)
 	{
 		return bitShiftedValue;
 	}
-	// use bit repeat bits from extended value14
+	// use bit repeat bits from value14
 	uint32 repeatValue14 = value14 & 0x1FFF;
 	return bitShiftedValue
-		| (repeatValue14 >> 4);
+		| (repeatValue14 << 5)
+		| (repeatValue14 >> 8);
 }
